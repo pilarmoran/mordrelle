@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lustria', serif;
+}
+
+header {
+    background-color: black;
+    padding: 10px; 
+    
+}
+
+#logo {
+    width: 150px;
+}
+
+ul {
+    display: inline-flex;
+    align-items: center;
+}
+
+.imagenFondo {
+    background-image: url(/imagenes/vinedos.jpg);
+    height: 330px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    font-size: 36px;
+}
+
+.textoCentrado {
+    text-align: center;
+    /* margin-left: 300px;
+    margin-right: 300px; */
+    border: 10px solid rgb(0, 0, 0);
+    padding-bottom: 40px;
+    margin-top: 10px;
+}
+
+.mencionEspecial {
+    
+    padding-bottom: 20px;
+    margin-top: 20px;
+    /* gradientes */
+    background-image: linear-gradient(to left, blue, violet);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-around;
+    
+}
+header>nav>ul>li>a {
+    color: white;
+    padding: 40px 20px 40px 20px;
+    font-size: 16px;
+    text-decoration: solid;
+}
+
+h2, h3, h4 {
+    padding: 20px;
+}
+
+.boton {
+    color: white;
+    background-color: rgb(70, 25, 129);
+    padding: 15px 50px;
+    margin-left: 20px;
+}
+
+
+.seccionImg {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img {
+    width: 50%;
+    display: flex;
+}
+
+footer {
+    padding: 40px;
+    margin-bottom: 0px;   
+    background-color: rgba(29, 28, 28, 0.836);
+    color: white;
+}
+
+.footerItem>a {
+    color: white;
+    text-decoration: solid;
+}
+
+
+
+
+/* grid producto */
+.gridArea { 
+    display: grid;   
+    grid-template-areas: 
+    "menue menue"
+    "hero hero"
+    "columnatexto columnaimagen"
+    "pie pie"
+}
+
+    .navegacion{
+        grid-area: menue;
+    }
+
+    .imagenFondo{
+        grid-area: hero;
+    }
+
+    .columnaTexto {
+        grid-area: columnatexto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .columnaImagen {
+        grid-area: columnaimagen;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .pie{
+        grid-area: pie;
+    }
+
+#form{
+    padding: 30px;
+    
+}
+
+@media screen and (max-width: 992px){
+    .navegacion {
+display: none;
+    }
+}
