@@ -1,0 +1,38 @@
+$alto-caja: 50px;
+$ancho-caja: 800px; 
+$violet: rgb(187, 109, 187) ;
+$purple: purple ;
+
+// aplico sass dos en la página de productos
+.caja-uno{
+    width: $ancho-caja/2;
+    height: $alto-caja;
+    background-color: $violet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.caja-dos{
+    width: $ancho-caja/2;
+    height: $alto-caja;
+    background-color: $purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+@for $i from 1 through 3 {
+    .box-#{$i} {
+        width: 10em *$i;
+        height: 2em;
+        background-color: $violet;
+        border: 1px solid $purple;
+        color: white;
+    }
+}

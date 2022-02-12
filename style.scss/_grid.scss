@@ -1,0 +1,56 @@
+/* grid mobile */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr;
+    grid-template-areas:
+        "hero"
+        "nosotros"
+        "bannerCta"
+        "columnaTexto"
+        "columnaImagen"
+        "video"
+}
+
+.hero {
+    grid-area: hero;
+}
+.nosotros {
+    grid-area: nosotros;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bannerCta{
+    grid-area: bannerCta;
+}
+
+.columnaTexto {
+    grid-area: columnaTexto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.columnaImagen {
+    grid-area: columnaImagen;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.video{
+    grid-area: video;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding: 1rem;
+}

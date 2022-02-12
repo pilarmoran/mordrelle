@@ -1,0 +1,61 @@
+
+.hero {
+    background-image: url(/imagenes/vinedos.jpg);
+    height: 30vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        color: white;
+        font-size: 38px;
+    }
+}
+
+
+
+.textoCentrado {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 40px;
+    margin-top: 10px;
+}
+
+.bannerCta {
+    padding-bottom: 20px;
+    margin-top: 20px;
+    /* gradientes */
+    background-image: linear-gradient(to left, rgb(54, 5, 73), rgb(126, 30, 126));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-around;
+    .boton {
+        color: white;
+        background-color: rgb(70, 25, 129);
+        padding: 15px 50px;
+        margin-left: 20px;
+    }
+
+}
+
+h2,h3,h4 {
+    padding: 20px;
+    font-size: 24px;
+}
+
+
+footer {
+    padding: 40px;
+    margin-bottom: 0px;
+    background-color: rgba(29, 28, 28, 0.836);
+    color: white;
+    a {
+        color: white;
+        text-decoration: solid;
+    }
+}
+
+

@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lustria', serif;
+}
+
+.hero {
+  background-image: url(/imagenes/vinedos.jpg);
+  height: 30vh;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 38px;
+}
+
+.textoCentrado {
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 40px;
+  margin-top: 10px;
+}
+
+.bannerCta {
+  padding-bottom: 20px;
+  margin-top: 20px;
+  /* gradientes */
+  background-image: -webkit-gradient(linear, right top, left top, from(#360549), to(#7e1e7e));
+  background-image: linear-gradient(to left, #360549, #7e1e7e);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.bannerCta .boton {
+  color: white;
+  background-color: #461981;
+  padding: 15px 50px;
+  margin-left: 20px;
+}
+
+h2, h3, h4 {
+  padding: 20px;
+  font-size: 24px;
+}
+
+footer {
+  padding: 40px;
+  margin-bottom: 0px;
+  background-color: rgba(29, 28, 28, 0.836);
+  color: white;
+}
+
+footer a {
+  color: white;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+/* grid mobile */
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 6fr;
+      grid-template-rows: 6fr;
+      grid-template-areas: "hero" "nosotros" "bannerCta" "columnaTexto" "columnaImagen" "video";
+}
+
+.hero {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hero;
+}
+
+.nosotros {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nosotros;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.bannerCta {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: bannerCta;
+}
+
+.columnaTexto {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: columnaTexto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+.columnaImagen {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: columnaImagen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+.video {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: video;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.caja-uno {
+  width: 400px;
+  height: 50px;
+  background-color: #bb6dbb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.caja-dos {
+  width: 400px;
+  height: 50px;
+  background-color: purple;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box-1 {
+  width: 10em;
+  height: 2em;
+  background-color: #bb6dbb;
+  border: 1px solid purple;
+  color: white;
+}
+
+.box-2 {
+  width: 20em;
+  height: 2em;
+  background-color: #bb6dbb;
+  border: 1px solid purple;
+  color: white;
+}
+
+.box-3 {
+  width: 30em;
+  height: 2em;
+  background-color: #bb6dbb;
+  border: 1px solid purple;
+  color: white;
+}
+/*# sourceMappingURL=estilos.css.map */
