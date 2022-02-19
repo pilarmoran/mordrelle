@@ -1,4 +1,4 @@
-/* grid mobile */
+/* grid mobile home */
 .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -22,6 +22,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 5rem;
 }
 .bannerCta{
     grid-area: bannerCta;
@@ -40,17 +41,120 @@
     grid-area: columnaImagen;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 30px;
+    
 }
 .video{
     grid-area: video;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
+    iframe{
+    width: 20rem;
+    height: 15rem;
+    margin-right: 10%;
 }
+}
+
+// home desktop
+@media screen and(min-width:991px) {
+
+.textoAcuarela{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    padding: 3rem;
+    background-color: aliceblue;
+    .boxTextoAcuarela{
+        margin: 0px;
+        padding: 3rem;
+    }
+    .imagenAcuarela{
+        margin-right: 20%;
+        img{
+            width: 28vh;
+        }
+    }
+}
+}
+
+
+// nosotros
+.nosotrosImagen{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 2fr;
+    grid-template-areas:
+    "title "
+    "imagenNos"
+    "parrafo1"
+}
+.title{
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parrafo1{
+    grid-area: parrafo1;
+    text-align: left;
+    margin-right: 20%;
+    margin-left: 20%;
+    .boton {
+        color: white;
+        background-color: rgb(70, 25, 129);
+        padding: 1em;
+        border-radius: 1em; 
+        text-decoration-line: none; 
+    }
+
+}
+.imagenNos{
+    grid-area: imagenNos;
+    justify-content: center;
+}
+// nosotros
+@media screen and (min-width: 991px){ 
+
+.nosotrosImagen{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 5fr;
+    grid-template-areas:
+    "title title"
+    "parrafo1 imagenNos"
+}
+.title{
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parrafo1{
+    grid-area: parrafo1;
+    text-align: left;
+    margin-right: 20%;
+    margin-left: 20%;
+    .boton {
+        color: white;
+        background-color: rgb(70, 25, 129);
+        padding: 1em;
+        border-radius: 1em;  
+    }
+
+}
+.imagenNos{
+    grid-area: imagenNos;
+    justify-content: center;
+}
+}
+
+// grid productos

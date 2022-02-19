@@ -1,61 +1,45 @@
 
-.hero {
-    background-image: url(/imagenes/vinedos.jpg);
-    height: 30vh;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    h1 {
-        color: white;
-        font-size: 38px;
-    }
-}
-
-
-
-.textoCentrado {
+.textoCentrado{
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
     padding-bottom: 40px;
     margin-top: 10px;
+    
+}
+.boxTextoAcuarela{
+    padding-bottom: 40px;
+    margin-top: 10px;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 
-.bannerCta {
-    padding-bottom: 20px;
-    margin-top: 20px;
+.bannerCta{
     /* gradientes */
-    background-image: linear-gradient(to left, rgb(54, 5, 73), rgb(126, 30, 126));
+    background-image: linear-gradient(to right, rgb(92, 7, 126), rgb(248, 183, 5));
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-around;
+    padding: 2rem;
     .boton {
         color: white;
-        background-color: rgb(70, 25, 129);
-        padding: 15px 50px;
-        margin-left: 20px;
+        background-color: rgb(52, 9, 107);
+        padding: 1rem;
+        border-radius: 1rem;
+        text-decoration-line: none
     }
-
-}
-
-h2,h3,h4 {
-    padding: 20px;
-    font-size: 24px;
-}
-
-
-footer {
-    padding: 40px;
-    margin-bottom: 0px;
-    background-color: rgba(29, 28, 28, 0.836);
-    color: white;
-    a {
-        color: white;
-        text-decoration: solid;
+    .textoBanner{
+        color: aliceblue;
+        padding: 40px;
     }
 }
-
-
+// producto
+.theWine{
+    text-align: center;
+    justify-content: center;
+    padding: 2em;
+    p{
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: larger;
+    }
+}

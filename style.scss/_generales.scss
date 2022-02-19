@@ -7,3 +7,34 @@
 body {
     font-family: 'Lustria', serif;
 }
+
+h2,h3,h4 {
+    padding: 20px;
+    font-size: 24px;
+}
+.hero {
+    background-image: url(/imagenes/vinedos.jpg);
+    height: 50vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        color: white;
+        font-size: 38px;
+    }
+}
+
+footer {
+    padding: 40px;
+    margin-bottom: 0px;
+    background-color: rgba(29, 28, 28, 0.836);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    a {
+        color: white;
+        text-decoration: solid;
+    }
+}
