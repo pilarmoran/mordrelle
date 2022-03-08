@@ -7,9 +7,15 @@
 body {
     font-family: 'Lustria', serif;
 }
-
-h2,h3,h4 {
+h2 {
     padding: 20px;
+    font-size: 36px;
+}
+h3 {
+    padding: 20px;
+    font-size: 32px;
+}
+h4 {
     font-size: 24px;
 }
 .hero {
@@ -21,7 +27,7 @@ h2,h3,h4 {
     justify-content: center;
     h1 {
         color: white;
-        font-size: 38px;
+        font-size: 45px;
     }
 }
 
@@ -31,8 +37,8 @@ footer {
     background-color: rgba(29, 28, 28, 0.836);
     color: white;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    text-align: center;
     a {
         color: white;
         text-decoration: solid;

@@ -5,16 +5,10 @@
     margin-top: 10px;
     
 }
-.boxTextoAcuarela{
-    padding-bottom: 40px;
-    margin-top: 10px;
-    margin-right: 20%;
-    margin-left: 20%;
-}
 
 .bannerCta{
     /* gradientes */
-    background-image: linear-gradient(to right, rgb(92, 7, 126), rgb(248, 183, 5));
+    background-image: linear-gradient(to right, rgb(92, 7, 126), rgb(167, 0, 111));
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -34,12 +28,16 @@
 }
 // producto
 .theWine{
+    margin-top: 30px;
     text-align: center;
     justify-content: center;
-    padding: 2em;
-    p{
+    h3{
         margin-left: 20%;
         margin-right: 20%;
         font-size: larger;
     }
+}
+//contacto
+button{
+    background-color: #34096b;
 }

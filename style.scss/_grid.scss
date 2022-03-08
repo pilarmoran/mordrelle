@@ -1,160 +1,329 @@
-/* grid mobile home */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 6fr;
-    grid-template-areas:
-        "hero"
-        "nosotros"
-        "bannerCta"
-        "columnaTexto"
-        "columnaImagen"
-        "video"
-}
-
-.hero {
-    grid-area: hero;
-}
+// Home
 .nosotros {
-    grid-area: nosotros;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 5rem;
-}
-.bannerCta{
-    grid-area: bannerCta;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5% 25% 5%;
 }
 
 .columnaTexto {
-    grid-area: columnaTexto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
 }
 
 .columnaImagen {
-    grid-area: columnaImagen;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5% 15% 5%;
 }
-.video{
-    grid-area: video;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content:space-evenly;
-    align-items: center;
-    padding: 2rem;
-    iframe{
+
+.video {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
+
+@media screen and(max-width:991px) {
+  iframe {
     width: 20rem;
     height: 15rem;
-    margin-right: 10%;
-}
-}
+  }
 
+  .nosotros {
+    padding: 10%;
+    padding-bottom: 40px;
+    margin-top: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+  h3 {
+    padding: 10px;
+    margin: 0px;
+    font-size: 28px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 38px;
+  }
+  .bannerCta {
+    display: flex;
+    flex-direction: column;
+  }
+  .columnaTexto img {
+    width: 100%;
+  }
+  .imagenAcuarela {
+    img {
+      width: 30vh;
+    }
+  }
+}
 // home desktop
 @media screen and(min-width:991px) {
-
-.textoAcuarela{
+  .textoAcuarela {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     padding: 3rem;
-    background-color: aliceblue;
-    .boxTextoAcuarela{
-        margin: 0px;
-        padding: 3rem;
-    }
-    .imagenAcuarela{
-        margin-right: 20%;
-        img{
-            width: 28vh;
-        }
-    }
-}
-}
 
+    .boxTextoAcuarela {
+      margin: 0px;
+      padding: 3rem;
+    }
+
+    .imagenAcuarela {
+      img {
+        width: 40vh;
+      }
+    }
+  }
+  .video {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 // nosotros
-.nosotrosImagen{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 2fr;
-    grid-template-areas:
+.nosotrosImagen {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 2fr;
+  margin-top: 20px;
+  grid-template-areas:
     "title "
     "imagenNos"
-    "parrafo1"
+    "parrafo1";
 }
-.title{
-    grid-area: title;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.parrafo1{
-    grid-area: parrafo1;
-    text-align: left;
-    margin-right: 20%;
-    margin-left: 20%;
-    .boton {
-        color: white;
-        background-color: rgb(70, 25, 129);
-        padding: 1em;
-        border-radius: 1em; 
-        text-decoration-line: none; 
-    }
 
+.title {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.imagenNos{
-    grid-area: imagenNos;
-    justify-content: center;
+
+.parrafo1 {
+  grid-area: parrafo1;
+  text-align: left;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  padding: 20px;
+
+  .boton {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.815);
+    padding: 5%;
+    border-radius: 1em;
+    text-decoration-line: none;
+  }
 }
+
+.imagenNos {
+  grid-area: imagenNos;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
 // nosotros
-@media screen and (min-width: 991px){ 
-
-.nosotrosImagen{
+@media screen and (min-width: 900px) {
+  .nosotrosImagen {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto 5fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
     grid-template-areas:
-    "title title"
-    "parrafo1 imagenNos"
-}
-.title{
+      "title title"
+      "parrafo1 imagenNos";
+  }
+
+  .title {
     grid-area: title;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.parrafo1{
+    padding: 50px;
+  }
+
+  .parrafo1 {
     grid-area: parrafo1;
     text-align: left;
     margin-right: 20%;
     margin-left: 20%;
+    margin-bottom: 20px;
+
     .boton {
-        color: white;
-        background-color: rgb(70, 25, 129);
-        padding: 1em;
-        border-radius: 1em;  
+      color: white;
+      background-color: rgba(0, 0, 0, 0.815);
+      padding: 1em;
+      border-radius: 1em;
     }
+  }
 
-}
-.imagenNos{
+  .imagenNos {
     grid-area: imagenNos;
-    justify-content: center;
-}
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: start;
+    margin-top: 20px;
+  }
 }
 
-// grid productos
+// servicios
+
+@media screen and (min-width: 980px) {
+  .gridCard {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-template-areas: "uno dos tres";
+  }
+
+  .uno {
+    grid-area: uno;
+    padding: 20px;
+  }
+
+  .dos {
+    grid-area: dos;
+    padding: 20px;
+  }
+
+  .tres {
+    grid-area: tres;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .uno {
+    grid-template: uno;
+    padding: 20px;
+  }
+
+  .dos {
+    grid-template: dos;
+    padding: 20px;
+  }
+
+  .tres {
+    grid-template: tres;
+    padding: 20px;
+  }
+}
+
+// producto
+.gridProducto {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: auto;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+  grid-template-areas:
+    "blanc pinot sav"
+    "tempranillo merlot syrah";
+}
+
+.blanc {
+  grid-area: blanc;
+  transition: transform 0.3s;
+}
+
+.pinot {
+  grid-area: pinot;
+  transition: transform 0.3s;
+}
+
+.sav {
+  grid-area: sav;
+  transition: transform 0.3s;
+}
+
+.tempranillo {
+  grid-area: tempranillo;
+  transition: transform 0.3s;
+}
+
+.merlot {
+  grid-area: merlot;
+  transition: transform 0.3s;
+}
+
+.syrah {
+  grid-area: syrah;
+  transition: transform 0.3s;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+@media screen and (max-width: 980px) {
+  .gridProducto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-template-areas:
+      "blanc"
+      "pinot"
+      "sav"
+      "tempranillo"
+      "merlot"
+      "syrah";
+  }
+
+  .blanc {
+    grid-area: blanc;
+  }
+
+  .pinot {
+    grid-area: pinot;
+  }
+
+  .sav {
+    grid-area: sav;
+  }
+
+  .tempranillo {
+    grid-area: tempranillo;
+  }
+
+  .merlot {
+    grid-area: merlot;
+  }
+
+  .syrah {
+    grid-area: syrah;
+  }
+}

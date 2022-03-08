@@ -9,8 +9,17 @@ body {
   font-family: 'Lustria', serif;
 }
 
-h2, h3, h4 {
+h2 {
   padding: 20px;
+  font-size: 36px;
+}
+
+h3 {
+  padding: 20px;
+  font-size: 32px;
+}
+
+h4 {
   font-size: 24px;
 }
 
@@ -31,7 +40,7 @@ h2, h3, h4 {
 
 .hero h1 {
   color: white;
-  font-size: 38px;
+  font-size: 45px;
 }
 
 footer {
@@ -42,13 +51,10 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 footer a {
@@ -63,17 +69,10 @@ footer a {
   margin-top: 10px;
 }
 
-.boxTextoAcuarela {
-  padding-bottom: 40px;
-  margin-top: 10px;
-  margin-right: 20%;
-  margin-left: 20%;
-}
-
 .bannerCta {
   /* gradientes */
-  background-image: -webkit-gradient(linear, left top, right top, from(#5c077e), to(#f8b705));
-  background-image: linear-gradient(to right, #5c077e, #f8b705);
+  background-image: -webkit-gradient(linear, left top, right top, from(#5c077e), to(#a7006f));
+  background-image: linear-gradient(to right, #5c077e, #a7006f);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,40 +103,24 @@ footer a {
 }
 
 .theWine {
+  margin-top: 30px;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2em;
 }
 
-.theWine p {
+.theWine h3 {
   margin-left: 20%;
   margin-right: 20%;
   font-size: larger;
 }
 
-/* grid mobile home */
-.grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 6fr;
-      grid-template-rows: 6fr;
-      grid-template-areas: "hero" "nosotros" "bannerCta" "columnaTexto" "columnaImagen" "video";
-}
-
-.hero {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: hero;
+button {
+  background-color: #34096b;
 }
 
 .nosotros {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: nosotros;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,19 +135,10 @@ footer a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 5rem;
-}
-
-.bannerCta {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: bannerCta;
+  padding: 5% 25% 5%;
 }
 
 .columnaTexto {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: columnaTexto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,13 +152,10 @@ footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px;
+  margin-top: 70px;
 }
 
 .columnaImagen {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: columnaImagen;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,13 +171,11 @@ footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px;
+  text-align: center;
+  padding: 5% 15% 5%;
 }
 
 .video {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: video;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,10 +194,47 @@ footer a {
   padding: 2rem;
 }
 
-.video iframe {
-  width: 20rem;
-  height: 15rem;
-  margin-right: 10%;
+@media screen and (max-width: 991px) {
+  iframe {
+    width: 20rem;
+    height: 15rem;
+  }
+  .nosotros {
+    padding: 10%;
+    padding-bottom: 40px;
+    margin-top: 10px;
+  }
+  .nosotros img {
+    width: 100%;
+  }
+  h3 {
+    padding: 10px;
+    margin: 0px;
+    font-size: 28px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 38px;
+  }
+  .bannerCta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .columnaTexto img {
+    width: 100%;
+  }
+  .imagenAcuarela img {
+    width: 30vh;
+  }
 }
 
 @media screen and (min-width: 991px) {
@@ -248,17 +254,22 @@ footer a {
         -ms-flex-align: center;
             align-items: center;
     padding: 3rem;
-    background-color: aliceblue;
   }
   .textoAcuarela .boxTextoAcuarela {
     margin: 0px;
     padding: 3rem;
   }
-  .textoAcuarela .imagenAcuarela {
-    margin-right: 20%;
-  }
   .textoAcuarela .imagenAcuarela img {
-    width: 28vh;
+    width: 40vh;
+  }
+  .video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -269,6 +280,7 @@ footer a {
       grid-template-columns: 1fr;
   -ms-grid-rows: auto 2fr;
       grid-template-rows: auto 2fr;
+  margin-top: 20px;
       grid-template-areas: "title " "imagenNos" "parrafo1";
 }
 
@@ -292,14 +304,16 @@ footer a {
   -ms-grid-column: 1;
   grid-area: parrafo1;
   text-align: left;
-  margin-right: 20%;
-  margin-left: 20%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .parrafo1 .boton {
   color: white;
-  background-color: #461981;
-  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.815);
+  padding: 5%;
   border-radius: 1em;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
@@ -309,12 +323,22 @@ footer a {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: imagenNos;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 10px;
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 900px) {
   .nosotrosImagen {
     display: -ms-grid;
     display: grid;
@@ -322,6 +346,8 @@ footer a {
         grid-template-columns: 2fr 1fr;
     -ms-grid-rows: auto 5fr;
         grid-template-rows: auto 5fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
         grid-template-areas: "title title" "parrafo1 imagenNos";
   }
   .title {
@@ -338,6 +364,7 @@ footer a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 50px;
   }
   .parrafo1 {
     -ms-grid-row: 2;
@@ -346,10 +373,11 @@ footer a {
     text-align: left;
     margin-right: 20%;
     margin-left: 20%;
+    margin-bottom: 20px;
   }
   .parrafo1 .boton {
     color: white;
-    background-color: #461981;
+    background-color: rgba(0, 0, 0, 0.815);
     padding: 1em;
     border-radius: 1em;
   }
@@ -357,117 +385,198 @@ footer a {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: imagenNos;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin-top: 20px;
   }
 }
 
-.caja-uno {
-  width: 400px;
-  height: 50px;
-  background-color: #bb6dbb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
+@media screen and (min-width: 980px) {
+  .gridCard {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 25% 25%;
+        grid-template-columns: 25% 25% 25%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "uno dos tres";
+  }
+  .uno {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: uno;
+    padding: 20px;
+  }
+  .dos {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: dos;
+    padding: 20px;
+  }
+  .tres {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: tres;
+    padding: 20px;
+  }
 }
 
-.caja-dos {
-  width: 400px;
-  height: 50px;
-  background-color: purple;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
+@media screen and (max-width: 980px) {
+  .uno {
+    grid-template: uno;
+    padding: 20px;
+  }
+  .dos {
+    grid-template: dos;
+    padding: 20px;
+  }
+  .tres {
+    grid-template: tres;
+    padding: 20px;
+  }
 }
 
-.box-1 {
-  width: 9em;
-  height: 3em;
-  background-color: #bb6dbb;
-  border: 1px solid purple;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+.gridProducto {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25%;
+      grid-template-columns: 25% 25% 25%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+      grid-template-areas: "blanc pinot sav" "tempranillo merlot syrah";
 }
 
-.box-2 {
-  width: 18em;
-  height: 3em;
-  background-color: #bb6dbb;
-  border: 1px solid purple;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.blanc {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: blanc;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 
-.box-3 {
-  width: 27em;
-  height: 3em;
-  background-color: #bb6dbb;
-  border: 1px solid purple;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.pinot {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: pinot;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.sav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: sav;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.tempranillo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: tempranillo;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.merlot {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: merlot;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.syrah {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: syrah;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 1;
+}
+
+@media screen and (max-width: 980px) {
+  .gridProducto {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "blanc" "pinot" "sav" "tempranillo" "merlot" "syrah";
+  }
+  .blanc {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: blanc;
+  }
+  .pinot {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: pinot;
+  }
+  .sav {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: sav;
+  }
+  .tempranillo {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: tempranillo;
+  }
+  .merlot {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: merlot;
+  }
+  .syrah {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: syrah;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
